@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<title>ARITHMETIC OPERATIONS</title>
+<script>
+function operation(){
+
+var a,b,c,d,ch;
+a=document.getElementById("n1").value;
+b=document.getElementById("n2").value;
+c=document.getElementById("op");
+ch=(c.options[c.selectedIndex].value);
+if(ch == "add"){
+d=a + b;
+}
+else if(ch == "sub"){
+d=a - b;
+}
+else
+if(ch == "mul"){
+d=a * b;
+}
+else{
+d=a / b;
+}
+document.write("THE CALCULATED VALUE IS: " +d+ ".");
+}
+</script>
+</head>
+<body>
+<p>ENTER THE FIRST NUMBER: <input type="text" id="n1"></p>
+<p>ENTER THE SECOND NUMBER: <input type="text" id="n2"></p>
+<label for="combo">TYPE OF OPERATIONS:</label>
+<select id = "op" class="combo">
+<option>select</option>
+<option value="add">1.ADDITION [+]</option>
+<option value="sub">2.SUBTRACTION [-]</option>
+<option value="mul">3.MULTIPLICATION [*]</option>
+<option value="div">4.DIVISION [%]</option>
+</select>
+<br>
+<br>
+<button onclick="operation()">RESULT</button>
+</body>
+</html>

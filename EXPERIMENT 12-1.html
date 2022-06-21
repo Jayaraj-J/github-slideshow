@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> javascript program returns the element that was shifted out from the array </title>
+</head>
+
+<script>
+
+function check() {
+    var n;
+    n = parseInt(document.getElementById("C").value);
+    var elements=[];
+    for(i=0;i<n;i++)
+        {
+            elements[i] = prompt("Enter the value to array:");
+        }
+    document.write(elements);
+          document.write("<br>");
+    var first=document.write(elements[0]);
+    document.write("<br>");
+    var last=document.write(elements[n-1]);
+
+}
+</script>
+<body>
+    <p>Enter count :<input type="text" id="C"></p>
+         <button onclick="check()"> Enter count </button>
+
+</body>
+</html>

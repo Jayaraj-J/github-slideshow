@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>EXPERIMENT 5</title>
+</head>
+<body>
+<script>
+var num1,num2,num3;
+document.write("<h2>Numbers in descending order.</h2>")
+
+num1=parseInt(prompt("Input the first integer"));
+num2=parseInt(prompt("Input the second integer"));
+num3=parseInt(prompt("Input the third integer"));
+
+if(num1>num2&&num1>num3)
+{
+   if(num3>num2)
+   {
+      document.write("." +num1+ ">" +num3+ ">" +num2+".");
+   }
+   else 
+   {
+      document.write("." +num1+ ">" +num2+ ">" +num3+".");
+   }
+}
+else if(num2>num3 && num2>num1)
+{
+   if(num1>num3){
+      document.write("." +num2+ ">" +num1+ ">" +num3+".");
+   }
+   else
+   {
+      document.write("." +num2+ ">" +num3+ ">" +num1+".");
+   }
+}
+else if(num3>num2&&num3>num1)
+{
+   if(num1>num2){
+      document.write("." +num3+ ">" +num1+ ">" +num2+".");
+   }
+   else
+   {
+      document.write("." +num3+ ">" +num2+ ">" +num1+".");
+   }
+}
+else{
+      document.write("All the numbers are equal/invalid choice.");
+   }
+</script>
+</body>
+</html>

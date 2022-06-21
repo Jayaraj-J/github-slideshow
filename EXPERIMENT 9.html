@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function check()
+{
+var height;
+height = parseInt(document.getElementById("height").value);
+if(height<150)
+document.write("THE PERSON IS DWARF");
+else
+if(height>=150 && height<165)
+document.write("THE PERSON IS AVERAGE HEIGHTED");
+else
+document.write("THE PERSON IS TALLER");
+
+}
+</script>
+</head>
+<body>
+<h2>TEST FOR HEIGHT</h2>
+<p>ENTER YOUR HEIGHT: </p> <input type="text" id="height"><br><br>
+<button onclick="check()">Check height</button>
+</body>
+</html>

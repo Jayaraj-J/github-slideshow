@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<script>
+function convert(degree)
+{
+var a;
+if(degree=="C")
+{
+a = document.getElementById("c").value*9/5+32;
+document.getElementById("f").value=Math.round(a);
+}
+else
+{
+a = (document.getElementById("f").value-32)*5/9;
+document.getElementById("c").value=Math.round(a);
+}
+
+}
+</script>
+<body>
+<h3> <i>TEMPERATURE CONVERSION</i></h3>
+<input type="text" id="c" onkeyup="convert('C')">degree Celcius  <br><br>
+<input type="text" id="f" onkeyup="convert('F')">degree farhenheit  <br><br>
+</body>
+</html>
